@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.ladder-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.rail {
+    width: 10px;
+    height: 150px;
+    background-color: black;
+}
+
+.rail-left {
+    margin-right: 10px;
+}
+
+.rail-right {
+    margin-left: 10px;
+}
+
+.rung {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    margin: 0 20px;
+}
+
+.output {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.output.off {
+    background-color: lightgray;
+}
+
+.output.on {
+    background-color: lightgreen;
+}
