@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ラダー図シミュレーション</title>
+    <title>ラダー図エディタ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>ラダー図シミュレーション</h1>
-    <div class="ladder-diagram">
+    <h1>ラダー図エディタ</h1>
+    <div id="ladderContainer" class="ladder-diagram">
         <div class="rail rail-left"></div>
-        <div class="rung">
-            <button id="switch1" class="switch">スイッチ1</button>
-            <span class="line"></span>
-            <span id="output1" class="output off">出力1</span>
-        </div>
+        <div id="rungContainer"></div>
         <div class="rail rail-right"></div>
+    </div>
+
+    <div class="controls">
+        <button id="addSwitch">スイッチを追加</button>
+        <button id="addOutput">出力を追加</button>
+        <button id="removeElement">要素を削除</button>
     </div>
 
     <script src="script.js"></script>
